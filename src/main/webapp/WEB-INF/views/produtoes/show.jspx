@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_br_edu_ufcg_embedded_comercio_dominio_Produto" object="${produto}" path="/produtoes" z="zD7L12lnf12JXhSGttEp5fd8W2Q=">
+        <field:display field="nome" id="s_br_edu_ufcg_embedded_comercio_dominio_Produto_nome" object="${produto}" z="R2ucE92dxC6F368wa0FbT9I2fKk="/>
+        <field:display field="codBarras" id="s_br_edu_ufcg_embedded_comercio_dominio_Produto_codBarras" object="${produto}" z="vVnfkENksaF3u0VowM51sRGBkZM="/>
+        <field:display field="preco" id="s_br_edu_ufcg_embedded_comercio_dominio_Produto_preco" object="${produto}" z="IaqYw3RZ0LWHqZVLlMKZUnEpN4M="/>
+        <field:display field="fornecedor" id="s_br_edu_ufcg_embedded_comercio_dominio_Produto_fornecedor" object="${produto}" z="yVpyYb9yrbjpKhyavSFyRKBfvkA="/>
+    </page:show>
+</div>

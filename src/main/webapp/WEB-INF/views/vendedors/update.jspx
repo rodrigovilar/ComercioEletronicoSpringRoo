@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_br_edu_ufcg_embedded_comercio_dominio_Vendedor" modelAttribute="vendedor" path="/vendedors" versionField="Version" z="jcbSGGRLhiKXDp+7+JU0dXt1f9g=">
+        <field:input field="nome" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_nome" min="2" required="true" z="LLVBDQvZ4dhlXz65yiFeZ95EukA="/>
+        <field:input field="cpf" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_cpf" required="true" validationRegex="/^d{3}.d{3}.d{3}-d{2}$/" z="zMazUGsrgntm8G9IGF9vxGbUz3o="/>
+        <field:datetime dateTimePattern="${vendedor_nascimento_date_format}" field="nascimento" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_nascimento" z="Aq0xhtGZJMvotAtjfNvEXvM0Us8="/>
+        <field:input field="email" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_email" validationMessageCode="field_invalid_email" z="hocXgHYHUGmkDF4cJeD34Q4SNp8="/>
+        <field:input field="matricula" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_matricula" required="true" z="7wgNTps151HWZ9SqkQBIpKkthLk="/>
+        <field:select field="vendas" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_vendas" itemValue="id" items="${pedidoes}" multiple="true" path="/pedidoes" z="2qk6rMbAVnMarPKhYWKR9HBgnn0="/>
+    </form:update>
+</div>

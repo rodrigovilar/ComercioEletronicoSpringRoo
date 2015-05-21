@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_br_edu_ufcg_embedded_comercio_dominio_Vendedor" items="${vendedors}" z="Oqt9vJRTgVMWzjU6iw5rrc2W0FM=">
+        <table:table data="${vendedors}" id="l_br_edu_ufcg_embedded_comercio_dominio_Vendedor" path="/vendedors" z="7efLAYWaKS7lhOJufuk1OKNJclE=">
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_nome" property="nome" z="80IUBG1K+eipJHqr8CAt71JU5gw="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_cpf" property="cpf" z="BtFlU90EKoWsID1Qz3Hkrn1lT1E="/>
+            <table:column date="true" dateTimePattern="${vendedor_nascimento_date_format}" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_nascimento" property="nascimento" z="UQje4AOazbnVQGXXdTT8osYQpkw="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_email" property="email" z="bXletqhWsHOl3lftQhQNUYlKbrU="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_matricula" property="matricula" z="73RJQ8+cao2q/Epe6YdzWxi1kJs="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_vendas" property="vendas" z="5p+fkzcCPsQA3mlbOvm4uTJCVeg="/>
+        </table:table>
+    </page:list>
+</div>

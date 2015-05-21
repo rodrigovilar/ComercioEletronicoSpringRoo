@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_br_edu_ufcg_embedded_comercio_dominio_Produto" items="${produtoes}" z="Gkfr/42+EjOG4xbrV9kjQNEP508=">
+        <table:table data="${produtoes}" id="l_br_edu_ufcg_embedded_comercio_dominio_Produto" path="/produtoes" z="UY+xCd7JN+xMoRD3VxdfR86SYPc=">
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Produto_nome" property="nome" z="EKwAoPltvI72iF3z0U4sQ0oeM6I="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Produto_codBarras" property="codBarras" z="yVkpwtyptU+KhKY2OjVrZz2H76I="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Produto_preco" property="preco" z="FbSbs4D0Tn5R2aoNu3BmlhmLrb8="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Produto_fornecedor" property="fornecedor" z="3ISuGazNhJAmOx3qx0Ojz6hwHZU="/>
+        </table:table>
+    </page:list>
+</div>

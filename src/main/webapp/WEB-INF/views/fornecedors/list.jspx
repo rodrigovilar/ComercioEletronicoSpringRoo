@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_br_edu_ufcg_embedded_comercio_dominio_Fornecedor" items="${fornecedors}" z="YI+lvM/xmkhN01YtIJNCpjEdUPM=">
+        <table:table data="${fornecedors}" id="l_br_edu_ufcg_embedded_comercio_dominio_Fornecedor" path="/fornecedors" z="ZwC5jBkp1jpW1ASp/MMvTUJK20I=">
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_nomeFantasia" property="nomeFantasia" z="p1/YFlatAuekc308oMxnT8IIbfs="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_razaoSocial" property="razaoSocial" z="e2Mz1lSbdJxJUKhO6/IKhMlb7HQ="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cnpj" property="cnpj" z="XBksQUxnuxTyo2dgWxORgvta9xs="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_endereco" property="endereco" z="Xu6X9eA1H01z51kiZc2WtO3wUrw="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cep" property="cep" z="RAJOex7u8FvYxoptulsI+x4tjQA="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_produtos" property="produtos" z="jRiiithc5ky6MQ01YTAFntYBTrQ="/>
+        </table:table>
+    </page:list>
+</div>

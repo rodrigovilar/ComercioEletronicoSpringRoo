@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_br_edu_ufcg_embedded_comercio_dominio_Produto" modelAttribute="produto" path="/produtoes" render="${empty dependencies}" z="ikSVJaSt3oxtGLSah9lGfXpWoVQ=">
+        <field:input field="nome" id="c_br_edu_ufcg_embedded_comercio_dominio_Produto_nome" min="2" required="true" z="xQxAGKOkoWTwv/+CulicyZVRBVo="/>
+        <field:input field="codBarras" id="c_br_edu_ufcg_embedded_comercio_dominio_Produto_codBarras" required="true" z="B4gcJzms2cvFEQYaTvep1XMSevg="/>
+        <field:input field="preco" id="c_br_edu_ufcg_embedded_comercio_dominio_Produto_preco" z="QlsOi7QqLyO93H6Kb810yqWz/rE="/>
+        <field:select field="fornecedor" id="c_br_edu_ufcg_embedded_comercio_dominio_Produto_fornecedor" itemValue="id" items="${fornecedors}" path="/fornecedors" required="true" z="OGLQn1H4nINJwmZbAiMweRmrM7s="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_br_edu_ufcg_embedded_comercio_dominio_Produto" render="${not empty dependencies}" z="eWRXlLrLIJM2OLyWfPeYuJ1kanI="/>
+</div>

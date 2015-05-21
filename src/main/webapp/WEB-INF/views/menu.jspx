@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_pedido" z="iXLvqfUyYZODGHkzg+/gzhMe3+4=">
+            <menu:item id="i_pedido_new" messageCode="global_menu_new" url="/pedidoes?form" z="YA16ddVavwOIuZow3XC6ABYLlD8="/>
+            <menu:item id="i_pedido_list" messageCode="global_menu_list" url="/pedidoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4v9vZIUymfF0RJpdRSQbCdFG95I="/>
+        </menu:category>
+        <menu:category id="c_cliente" z="OA12E4nwdOcMU0p7LaQV8KKBm5E=">
+            <menu:item id="i_cliente_new" messageCode="global_menu_new" url="/clientes?form" z="cDLtjRjIN5c0dyE1ltBb0Mk1DJo="/>
+            <menu:item id="i_cliente_list" messageCode="global_menu_list" url="/clientes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lk2UTVTUA9lz30A2vJEbY3GbO6E="/>
+        </menu:category>
+        <menu:category id="c_produto" z="8jGkU+jEAT5KOiwMOctW/Ay8ScU=">
+            <menu:item id="i_produto_new" messageCode="global_menu_new" url="/produtoes?form" z="im12IAgxToraeq1qqXPZPutEYTY="/>
+            <menu:item id="i_produto_list" messageCode="global_menu_list" url="/produtoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="2XuLRqe1IbodNc8HoDoQzm4sqwk="/>
+        </menu:category>
+        <menu:category id="c_fornecedor" z="eqEA2/gVLMrPQ5jn0QVHHuVkYoo=">
+            <menu:item id="i_fornecedor_new" messageCode="global_menu_new" url="/fornecedors?form" z="FekfADNbEHUqMTVltcI0Ce40mJs="/>
+            <menu:item id="i_fornecedor_list" messageCode="global_menu_list" url="/fornecedors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="WdcWfTAPmhUiYVanzShZhACYxlU="/>
+        </menu:category>
+        <menu:category id="c_itempedido" z="SSNmiHuUOg5Lu8OfQnHT0jCqSo8=">
+            <menu:item id="i_itempedido_new" messageCode="global_menu_new" url="/itempedidoes?form" z="0efveCF/P8k9fgJFUqrnP/LKHrU="/>
+            <menu:item id="i_itempedido_list" messageCode="global_menu_list" url="/itempedidoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="CU4f9V5lElxVjSr32T+qLNAv7jg="/>
+        </menu:category>
+        <menu:category id="c_vendedor" z="eaXrsLCiX0gsjGwGzK76VUHfDew=">
+            <menu:item id="i_vendedor_new" messageCode="global_menu_new" url="/vendedors?form" z="jjoGhb0lRLJKi7tzj5BdS1BzBRw="/>
+            <menu:item id="i_vendedor_list" messageCode="global_menu_list" url="/vendedors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="WHFeKIwRj++IMLooEHVOLqalirc="/>
+        </menu:category>
+    </menu:menu>
+</div>

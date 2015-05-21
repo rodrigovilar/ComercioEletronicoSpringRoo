@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_br_edu_ufcg_embedded_comercio_dominio_Fornecedor" object="${fornecedor}" path="/fornecedors" z="u+kNSM+w3/UOvs/kkMCrkHhqETc=">
+        <field:display field="nomeFantasia" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_nomeFantasia" object="${fornecedor}" z="Er9fqnNIAwRhaRA5Xn73FMXJ37E="/>
+        <field:display field="razaoSocial" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_razaoSocial" object="${fornecedor}" z="6Tdg15j8R3Krt9bNKfvaGU1CIc4="/>
+        <field:display field="cnpj" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cnpj" object="${fornecedor}" z="u+e2Ocho1aE5bgPKIa8KjGHsFDY="/>
+        <field:display field="endereco" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_endereco" object="${fornecedor}" z="zt5xEBtLL4lpJm2hD3OGv2Vfe2g="/>
+        <field:display field="cep" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cep" object="${fornecedor}" z="aVxZYazlwgNtqdpFwxD3T+w8Z7g="/>
+        <field:display field="produtos" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_produtos" object="${fornecedor}" z="hnLVcXLY/eOzGa9Cwrbvnj0/cig="/>
+    </page:show>
+</div>

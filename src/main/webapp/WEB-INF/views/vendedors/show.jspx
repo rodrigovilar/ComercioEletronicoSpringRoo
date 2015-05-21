@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_br_edu_ufcg_embedded_comercio_dominio_Vendedor" object="${vendedor}" path="/vendedors" z="98pvQZVG80dUculQbmf08somrhk=">
+        <field:display field="nome" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_nome" object="${vendedor}" z="o2ecgoYlNyqZSXLgkoQsVfKrpE0="/>
+        <field:display field="cpf" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_cpf" object="${vendedor}" z="CGGnOefLCMC6fHqjP40HpB1sLUU="/>
+        <field:display date="true" dateTimePattern="${vendedor_nascimento_date_format}" field="nascimento" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_nascimento" object="${vendedor}" z="HApCrszp+86j23dEGmVjS9UvHeA="/>
+        <field:display field="email" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_email" object="${vendedor}" z="uz3hQJDE/w3AURBfWpH5hRiub6k="/>
+        <field:display field="matricula" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_matricula" object="${vendedor}" z="RFcadHCu54GYnNGIOZ9IMV1oWXI="/>
+        <field:display field="vendas" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_vendas" object="${vendedor}" z="0ZJN02CCijizywm3syW8duq0v6M="/>
+    </page:show>
+</div>

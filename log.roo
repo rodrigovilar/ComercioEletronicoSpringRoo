@@ -50,3 +50,9 @@ focus --class ~.dominio.Pedido
 field set --fieldName itens --type ~.dominio.ItemPedido --mappedBy pedido
 focus --class ~.dominio.ItemPedido
 field reference --fieldName pedido --type ~.dominio.Pedido --notNull 
+json all --deepSerialize 
+web mvc json setup
+web mvc json all 
+web mvc json all 
+web mvc setup 
+web mvc all --package ~

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_br_edu_ufcg_embedded_comercio_dominio_Pedido" object="${pedido}" path="/pedidoes" z="4HlxiWpZYYj3k6O6ZTEXyEP+dlc=">
+        <field:display date="true" dateTimePattern="${pedido_lancamento_date_format}" field="lancamento" id="s_br_edu_ufcg_embedded_comercio_dominio_Pedido_lancamento" object="${pedido}" z="IYIxD8RlZp50wuI4dsi9K/yF+ho="/>
+        <field:display field="cliente" id="s_br_edu_ufcg_embedded_comercio_dominio_Pedido_cliente" object="${pedido}" z="oARNtfEDpe14uS6xtm/n3NJZ70k="/>
+        <field:display field="vendedor" id="s_br_edu_ufcg_embedded_comercio_dominio_Pedido_vendedor" object="${pedido}" z="5MHEN5nO5q3JOe7FutBiL4xNP7c="/>
+        <field:display field="itens" id="s_br_edu_ufcg_embedded_comercio_dominio_Pedido_itens" object="${pedido}" z="wc8mrb1PXcNPzuedO/os9+etME8="/>
+    </page:show>
+</div>

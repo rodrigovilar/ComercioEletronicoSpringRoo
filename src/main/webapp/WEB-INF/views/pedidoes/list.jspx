@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_br_edu_ufcg_embedded_comercio_dominio_Pedido" items="${pedidoes}" z="VKkC+of4gAnNCRt44cYPSQABFEA=">
+        <table:table data="${pedidoes}" id="l_br_edu_ufcg_embedded_comercio_dominio_Pedido" path="/pedidoes" z="NzPZzXy+kPoOyr5rVoNoME95ys0=">
+            <table:column date="true" dateTimePattern="${pedido_lancamento_date_format}" id="c_br_edu_ufcg_embedded_comercio_dominio_Pedido_lancamento" property="lancamento" z="oPp0Q4FjfOyhAqjrDo47Q7/9Ic8="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Pedido_cliente" property="cliente" z="2Z0XkLGLU6K4DilfQUYUa1Q8u+U="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Pedido_vendedor" property="vendedor" z="1VbPFC1X2BSkHssShAUWo1I5SIQ="/>
+            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Pedido_itens" property="itens" z="iKcEWVz+TFTHCaxgONxXtFe7t3Q="/>
+        </table:table>
+    </page:list>
+</div>

@@ -6,10 +6,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.persistence.Column;
 import javax.persistence.ManyToOne;
+import org.springframework.roo.addon.json.RooJson;
 
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
+@RooJson(deepSerialize = true)
 public class Produto {
 
     /**
