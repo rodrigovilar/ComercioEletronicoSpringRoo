@@ -9,7 +9,6 @@
             <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cnpj" property="cnpj" z="XBksQUxnuxTyo2dgWxORgvta9xs="/>
             <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_endereco" property="endereco" z="Xu6X9eA1H01z51kiZc2WtO3wUrw="/>
             <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cep" property="cep" z="RAJOex7u8FvYxoptulsI+x4tjQA="/>
-            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_produtos" property="produtos" z="jRiiithc5ky6MQ01YTAFntYBTrQ="/>
         </table:table>
     </page:list>
 </div>

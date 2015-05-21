@@ -8,6 +8,5 @@
         <field:display date="true" dateTimePattern="${vendedor_nascimento_date_format}" field="nascimento" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_nascimento" object="${vendedor}" z="HApCrszp+86j23dEGmVjS9UvHeA="/>
         <field:display field="email" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_email" object="${vendedor}" z="uz3hQJDE/w3AURBfWpH5hRiub6k="/>
         <field:display field="matricula" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_matricula" object="${vendedor}" z="RFcadHCu54GYnNGIOZ9IMV1oWXI="/>
-        <field:display field="vendas" id="s_br_edu_ufcg_embedded_comercio_dominio_Vendedor_vendas" object="${vendedor}" z="0ZJN02CCijizywm3syW8duq0v6M="/>
     </page:show>
 </div>

@@ -8,7 +8,7 @@
         <field:input field="cnpj" id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cnpj" required="true" validationRegex="/^d{2}.d{3}.d{3}/d{4}-d{2}$/" z="heb2Fxv7PP3UHZADGUvAdB0XME4="/>
         <field:input field="endereco" id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_endereco" z="mXcnNpabi62Q6wf9GDJrJexMG18="/>
         <field:input field="cep" id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cep" validationRegex="/^d{5}-d{3}$/" z="JVdlS/J+8tnBugDiaGcHOIGO/1Y="/>
-        <field:select field="produtos" id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_produtos" itemValue="id" items="${produtoes}" multiple="true" path="/produtoes" z="TzUbIeVrqrWC38QMRG81UQ03//M="/>
+        <field:simple field="produtos" id="c_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_produtos" messageCode="entity_reference_not_managed" messageCodeAttribute="Produto" z="GJ0i6nuox0A4FORcqwCHFM4FuxU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_br_edu_ufcg_embedded_comercio_dominio_Fornecedor" render="${not empty dependencies}" z="fZJxbB8iJNjmVh3oj277Ndc62Gs="/>
 </div>

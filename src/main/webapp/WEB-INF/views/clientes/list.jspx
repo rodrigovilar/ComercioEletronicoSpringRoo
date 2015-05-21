@@ -8,7 +8,6 @@
             <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Cliente_cpf" property="cpf" z="FPY2Po7gI9WqQHS90elyEtmyGic="/>
             <table:column date="true" dateTimePattern="${cliente_nascimento_date_format}" id="c_br_edu_ufcg_embedded_comercio_dominio_Cliente_nascimento" property="nascimento" z="eJvQS9lAWMRwBG8QLRAj307XvEM="/>
             <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Cliente_credito" property="credito" z="JQY2v8Yvq+v2cwnqzCNFZSApA2Y="/>
-            <table:column id="c_br_edu_ufcg_embedded_comercio_dominio_Cliente_pedidos" property="pedidos" z="hjQlsZGjPiUAADMjufQShfnrGuA="/>
         </table:table>
     </page:list>
 </div>

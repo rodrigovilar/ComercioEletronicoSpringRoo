@@ -18,7 +18,7 @@ field number --fieldName codBarras --type int --notNull --unique
 field number --fieldName preco --type float
 field reference --fieldName fornecedor --type ~.dominio.Fornecedor --notNull 
 focus --class ~.dominio.Fornecedor
-field set --fieldName produtos --type ~.dominio.Produto --mappedBy fornecedor
+field set --fieldName produtos --type ~.dominio.Produto --mappedBy fornecedor  --cardinality ONE_TO_MANY 
 entity jpa --class ~.dominio.Cliente
 field string --fieldName nome --sizeMin 2 --notNull 
 field string --fieldName cpf --regexp /^d{3}.d{3}.d{3}-d{2}$/ --notNull 
@@ -36,23 +36,24 @@ field date --fieldName lancamento --type java.util.Date
 field reference --fieldName cliente --type ~.dominio.Cliente --notNull
 field reference --fieldName vendedor --type ~.dominio.Vendedor
 focus --class ~.dominio.Cliente
-field set --fieldName pedidos --type ~.dominio.Pedido
+field set --fieldName pedidos --type ~.dominio.Pedido  --cardinality ONE_TO_MANY 
 focus --class ~.dominio.Vendedor
-field set --fieldName vendas --type ~.dominio.Pedido
+field set --fieldName vendas --type ~.dominio.Pedido  --cardinality ONE_TO_MANY 
 // [failed] field set --fieldName vendas --type ~.dominio.Pedido --mappedBy vendedor
-field set --fieldName vendas --type ~.dominio.Pedido --mappedBy vendedor
+field set --fieldName vendas --type ~.dominio.Pedido --mappedBy vendedor --cardinality ONE_TO_MANY 
 focus --class ~.dominio.Cliente
-field set --fieldName pedidos --type ~.dominio.Pedido --mappedBy cliente
+field set --fieldName pedidos --type ~.dominio.Pedido --mappedBy cliente --cardinality ONE_TO_MANY 
 entity jpa --class ~.dominio.ItemPedido
 field number --fieldName quantidade --type float --notNull 
 field reference --fieldName produto --type ~.dominio.Produto --notNull 
 focus --class ~.dominio.Pedido
-field set --fieldName itens --type ~.dominio.ItemPedido --mappedBy pedido
+field set --fieldName itens --type ~.dominio.ItemPedido --mappedBy pedido  --cardinality ONE_TO_MANY 
 focus --class ~.dominio.ItemPedido
 field reference --fieldName pedido --type ~.dominio.Pedido --notNull 
 json all --deepSerialize 
 web mvc json setup
 web mvc json all 
-web mvc json all 
 web mvc setup 
 web mvc all --package ~
+hint
+focus --class ~.dominio.Cliente

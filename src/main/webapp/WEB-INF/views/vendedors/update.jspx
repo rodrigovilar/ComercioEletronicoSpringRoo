@@ -8,6 +8,6 @@
         <field:datetime dateTimePattern="${vendedor_nascimento_date_format}" field="nascimento" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_nascimento" z="Aq0xhtGZJMvotAtjfNvEXvM0Us8="/>
         <field:input field="email" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_email" validationMessageCode="field_invalid_email" z="hocXgHYHUGmkDF4cJeD34Q4SNp8="/>
         <field:input field="matricula" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_matricula" required="true" z="7wgNTps151HWZ9SqkQBIpKkthLk="/>
-        <field:select field="vendas" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_vendas" itemValue="id" items="${pedidoes}" multiple="true" path="/pedidoes" z="2qk6rMbAVnMarPKhYWKR9HBgnn0="/>
+        <field:simple field="vendas" id="c_br_edu_ufcg_embedded_comercio_dominio_Vendedor_vendas" messageCode="entity_reference_not_managed" messageCodeAttribute="Pedido" z="F84yLJ5xR4SvqrmqknYADLELOzg="/>
     </form:update>
 </div>

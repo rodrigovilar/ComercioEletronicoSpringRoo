@@ -7,6 +7,5 @@
         <field:display field="cpf" id="s_br_edu_ufcg_embedded_comercio_dominio_Cliente_cpf" object="${cliente}" z="97MhJuuLHbPSN5HlXZVJ5POutyU="/>
         <field:display date="true" dateTimePattern="${cliente_nascimento_date_format}" field="nascimento" id="s_br_edu_ufcg_embedded_comercio_dominio_Cliente_nascimento" object="${cliente}" z="irDzuKlhuwUDdpOuTQJkqPxHEJM="/>
         <field:display field="credito" id="s_br_edu_ufcg_embedded_comercio_dominio_Cliente_credito" object="${cliente}" z="cQkBSaWn7K3uEJsRpP5G76fYsec="/>
-        <field:display field="pedidos" id="s_br_edu_ufcg_embedded_comercio_dominio_Cliente_pedidos" object="${cliente}" z="rYMkR8nFIzUXP4SXFGuk/pq8u54="/>
     </page:show>
 </div>

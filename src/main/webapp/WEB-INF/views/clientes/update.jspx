@@ -7,6 +7,6 @@
         <field:input field="cpf" id="c_br_edu_ufcg_embedded_comercio_dominio_Cliente_cpf" required="true" validationRegex="/^d{3}.d{3}.d{3}-d{2}$/" z="eZPE+eX2kGUUa9S6addM3Hto5SU="/>
         <field:datetime dateTimePattern="${cliente_nascimento_date_format}" field="nascimento" id="c_br_edu_ufcg_embedded_comercio_dominio_Cliente_nascimento" z="y55tvsCgf5lUS9dstTe5sTE0gm8="/>
         <field:input field="credito" id="c_br_edu_ufcg_embedded_comercio_dominio_Cliente_credito" z="ibLSjaZX5a5kp3R6ilN2ULPnNTk="/>
-        <field:select field="pedidos" id="c_br_edu_ufcg_embedded_comercio_dominio_Cliente_pedidos" itemValue="id" items="${pedidoes}" multiple="true" path="/pedidoes" z="m2kf2UdT1pud0n0i+o5Bb2xjqKs="/>
+        <field:simple field="pedidos" id="c_br_edu_ufcg_embedded_comercio_dominio_Cliente_pedidos" messageCode="entity_reference_not_managed" messageCodeAttribute="Pedido" z="QxRzDp3FmXQHJLBexrjzjcwg32Q="/>
     </form:update>
 </div>

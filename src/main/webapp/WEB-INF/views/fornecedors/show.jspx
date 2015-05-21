@@ -8,6 +8,5 @@
         <field:display field="cnpj" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cnpj" object="${fornecedor}" z="u+e2Ocho1aE5bgPKIa8KjGHsFDY="/>
         <field:display field="endereco" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_endereco" object="${fornecedor}" z="zt5xEBtLL4lpJm2hD3OGv2Vfe2g="/>
         <field:display field="cep" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_cep" object="${fornecedor}" z="aVxZYazlwgNtqdpFwxD3T+w8Z7g="/>
-        <field:display field="produtos" id="s_br_edu_ufcg_embedded_comercio_dominio_Fornecedor_produtos" object="${fornecedor}" z="hnLVcXLY/eOzGa9Cwrbvnj0/cig="/>
     </page:show>
 </div>
