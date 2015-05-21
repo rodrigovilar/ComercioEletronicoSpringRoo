@@ -1,0 +1,52 @@
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-21 14:39:35
+// [failed] project --topLevelPackage br.edu.ufcg.embedded.comercio --projectName ComercioEletronico --java 7 --packaging WAR
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-21 14:39:36
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-21 14:39:37
+hint
+project --topLevelPackage br.edu.ufcg.embedded.comercio
+jpa setup --database H2_IN_MEMORY --provider HIBERNATE 
+entity jpa --class ~.dominio.Fornecedor 
+field string --fieldName nomeFantasia --sizeMin 2 --notNull 
+field string --fieldName razaoSocial --sizeMin 2 
+field string --fieldName cnpj --regexp /^d{2}.d{3}.d{3}/d{4}-d{2}$/ --notNull 
+field string --fieldName endereco
+// [failed] field string --fieldName cnpj --regexp /^d{5}-d{3}$/ 
+field string --fieldName cep --regexp /^d{5}-d{3}$/ 
+entity jpa --class ~.dominio.Produto
+field string --fieldName nome --sizeMin 2 --notNull 
+field number --fieldName codBarras --type int --notNull --unique 
+field number --fieldName preco --type float
+field reference --fieldName fornecedor --type ~.dominio.Fornecedor --notNull 
+focus --class ~.dominio.Fornecedor
+field set --fieldName produtos --type ~.dominio.Produto --mappedBy fornecedor
+entity jpa --class ~.dominio.Cliente
+field string --fieldName nome --sizeMin 2 --notNull 
+field string --fieldName cpf --regexp /^d{3}.d{3}.d{3}-d{2}$/ --notNull 
+field date --fieldName nascimento --type java.util.Date
+// [failed] field number --fieldName credito --type float --digitsFraction 2 --value 1000
+field number --fieldName credito --type float --digitsFraction 2 --value 1000 --digitsInteger 6
+entity jpa --class ~.dominio.Vendedor
+field string --fieldName nome --sizeMin 2 --notNull 
+field string --fieldName cpf --regexp /^d{3}.d{3}.d{3}-d{2}$/ --notNull 
+field date --fieldName nascimento --type java.util.Date
+field string --fieldName email
+field string --fieldName matricula --notNull 
+entity jpa --class ~.dominio.Pedido
+field date --fieldName lancamento --type java.util.Date
+field reference --fieldName cliente --type ~.dominio.Cliente --notNull
+field reference --fieldName vendedor --type ~.dominio.Vendedor
+focus --class ~.dominio.Cliente
+field set --fieldName pedidos --type ~.dominio.Pedido
+focus --class ~.dominio.Vendedor
+field set --fieldName vendas --type ~.dominio.Pedido
+// [failed] field set --fieldName vendas --type ~.dominio.Pedido --mappedBy vendedor
+field set --fieldName vendas --type ~.dominio.Pedido --mappedBy vendedor
+focus --class ~.dominio.Cliente
+field set --fieldName pedidos --type ~.dominio.Pedido --mappedBy cliente
+entity jpa --class ~.dominio.ItemPedido
+field number --fieldName quantidade --type float --notNull 
+field reference --fieldName produto --type ~.dominio.Produto --notNull 
+focus --class ~.dominio.Pedido
+field set --fieldName itens --type ~.dominio.ItemPedido --mappedBy pedido
+focus --class ~.dominio.ItemPedido
+field reference --fieldName pedido --type ~.dominio.Pedido --notNull 
